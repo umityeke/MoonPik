@@ -17,21 +17,21 @@
             <!-- Main Title with Gradient -->
             <h1 class="text-7xl md:text-8xl lg:text-9xl font-bold mb-8 leading-tight" data-reveal>
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400">
-                    Engineering
+                    Mühendislik
                 </span>
                 <br />
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400">
-                    Digital
+                    Dijital
                 </span>
                 <br />
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-                    Excellence
+                    Mükemmellik
                 </span>
             </h1>
             
             <!-- Subtitle -->
             <p class="text-xl md:text-2xl text-white/70 mb-12 leading-relaxed" data-reveal>
-                Transform your vision into reality with cutting-edge technology
+                Vizyonunuzu modern yazılım mimarisi ve yüksek performanslı kod ile güvenilir bir ürüne dönüştürüyoruz.
             </p>
             
             <!-- Neon Glow Button -->
@@ -45,7 +45,7 @@
                     "
                     onmouseover="this.style.boxShadow='0 0 30px rgba(168, 85, 247, 0.8), 0 0 60px rgba(59, 130, 246, 0.6), inset 0 0 30px rgba(168, 85, 247, 0.2)'"
                     onmouseout="this.style.boxShadow='0 0 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(59, 130, 246, 0.3), inset 0 0 20px rgba(168, 85, 247, 0.1)'">
-                    <span class="relative z-10">Our Ecosystem</span>
+                    <span class="relative z-10">Ekosistemimizi Keşfedin</span>
                     <div class="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/20 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
             </div>

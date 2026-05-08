@@ -13,10 +13,17 @@
             Moonpik ile fikirden ürüne,
             üründen ekosisteme.
         </h1>
-        <p class="mt-8 max-w-3xl text-base leading-8 text-slate-300 opacity-0 translate-y-6 transition duration-700 sm:text-lg" data-reveal>Yüksek performanslı yazılım mimarisi, otomasyon ve güvenlik odaklı teknoloji altyapıları.</p>
+        <p class="mt-8 max-w-3xl text-base leading-8 text-slate-300 opacity-0 translate-y-6 transition duration-700 sm:text-lg" data-reveal>Modern Yazılım Mimarisi, SaaS Ekosistemi ve Yüksek Performanslı Kod odağında; güvenli, ölçeklenebilir ve uzun ömürlü teknoloji altyapıları kuruyoruz.</p>
+
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-3 text-xs font-medium uppercase tracking-[0.18em] text-slate-300 opacity-0 translate-y-6 transition duration-700" data-reveal>
+            <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Kurumsal Yazılım</span>
+            <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Bulut Otomasyonu</span>
+            <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Mobil Deneyim</span>
+            <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Güvenlik Odaklı Mimari</span>
+        </div>
 
         <a href="#solutions" class="mt-16 inline-flex flex-col items-center gap-2 text-slate-400 opacity-0 translate-y-6 transition duration-700 hover:text-white" data-reveal>
-            <span class="text-xs uppercase tracking-[0.18em]">Keşfet</span>
+            <span class="text-xs uppercase tracking-[0.18em]">Aşağı Kaydır</span>
             <span class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 backdrop-blur-md animate-bounce">
                 <i data-lucide="chevrons-down" class="h-4 w-4"></i>
             </span>
@@ -24,10 +31,27 @@
     </div>
 </section>
 
+<section class="mx-auto w-[92%] max-w-7xl pb-20">
+    <div class="grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md" data-reveal>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Yaklaşım</p>
+            <p class="mt-3 text-lg font-semibold text-white">İşin tamamını tek parça değil, yönetilebilir sistemler olarak tasarlıyoruz.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md" data-reveal>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Teslimat</p>
+            <p class="mt-3 text-lg font-semibold text-white">Hızlı başlayan, kontrollü büyüyen ve ölçülebilir sonuç veren üretim modelleri kuruyoruz.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md" data-reveal>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Güvence</p>
+            <p class="mt-3 text-lg font-semibold text-white">Kurumsal seviyede güvenlik, izlenebilirlik ve sürdürülebilirlik sunuyoruz.</p>
+        </div>
+    </div>
+</section>
+
 <section id="solutions" class="mx-auto w-[92%] max-w-7xl py-40">
     <div class="mb-16" data-reveal>
-        <p class="mb-5 text-xs uppercase tracking-[0.2em] text-slate-400">Capability Grid</p>
-        <h2 class="max-w-4xl bg-gradient-to-b from-white to-slate-500 bg-clip-text font-display text-4xl font-bold tracking-tighter leading-[1.14] text-transparent sm:text-5xl">Yazılım Mimarisinde Moonpik Standartları</h2>
+        <p class="mb-5 text-xs uppercase tracking-[0.2em] text-slate-400">Çözüm Katmanı</p>
+        <h2 class="max-w-4xl bg-gradient-to-b from-white to-slate-500 bg-clip-text font-display text-4xl font-bold tracking-tighter leading-[1.14] text-transparent sm:text-5xl">Yazılım Mimarisiyle Değer Üretiyoruz</h2>
         <p class="mt-7 max-w-3xl text-base leading-8 text-slate-300">Kurumsal ama fütüristik bir yerleşim diliyle, ürünleri hızlı teslim ederken teknik borcu azaltan bir mühendislik pratiği uyguluyoruz.</p>
     </div>
 
@@ -42,7 +66,7 @@
             <div class="flex h-full flex-col justify-between">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-indigo-200"><i data-lucide="building-2" class="h-5 w-5"></i></span>
                 <div class="mt-10">
-                    <h3 class="font-display text-2xl font-bold tracking-tighter text-white">SaaS Systems</h3>
+                    <h3 class="font-display text-2xl font-bold tracking-tighter text-white">SaaS Sistemleri</h3>
                     <p class="mt-4 text-sm leading-7 text-slate-300">Çok kiracılı mimariler, abonelik bazlı iş modelleri ve ölçeklenebilir panel yapıları.</p>
                 </div>
             </div>
@@ -52,7 +76,7 @@
             <div class="flex h-full flex-col justify-between">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-blue-200"><i data-lucide="smartphone" class="h-5 w-5"></i></span>
                 <div class="mt-10">
-                    <h3 class="font-display text-2xl font-bold tracking-tighter text-white">Mobile Products</h3>
+                    <h3 class="font-display text-2xl font-bold tracking-tighter text-white">Mobil Ürünler</h3>
                     <p class="mt-4 text-sm leading-7 text-slate-300">Saha operasyonlarından müşteri deneyimine kadar yüksek performanslı mobil ürün tasarımı.</p>
                 </div>
             </div>
@@ -62,11 +86,26 @@
             <div class="flex h-full flex-col justify-between">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-emerald-200"><i data-lucide="workflow" class="h-5 w-5"></i></span>
                 <div class="mt-10">
-                    <h3 class="font-display text-2xl font-bold tracking-tighter text-white">Automation Engine</h3>
+                    <h3 class="font-display text-2xl font-bold tracking-tighter text-white">Otomasyon Motoru</h3>
                     <p class="mt-4 text-sm leading-7 text-slate-300">Operasyonel darboğazları ortadan kaldıran akıllı otomasyon ve entegrasyon katmanları.</p>
                 </div>
             </div>
         </article>
+    </div>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/8 to-white/3 p-6 backdrop-blur-md" data-reveal>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Neden Moonpik?</p>
+            <p class="mt-3 text-lg font-semibold text-white">Hızlı teslimat, kontrollü mimari ve net teknik yönetişim.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/8 to-white/3 p-6 backdrop-blur-md" data-reveal>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Güvence</p>
+            <p class="mt-3 text-lg font-semibold text-white">Güvenlik, sürdürülebilirlik ve bakım kolaylığı aynı çatı altında.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/8 to-white/3 p-6 backdrop-blur-md" data-reveal>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Sonuç</p>
+            <p class="mt-3 text-lg font-semibold text-white">İşinizi büyüten, müşterinin hemen fark ettiği kurumsal bir dijital deneyim.</p>
+        </div>
     </div>
 </section>
 
@@ -74,7 +113,7 @@
 <section class="mx-auto w-[92%] max-w-7xl py-12" data-reveal>
     <div class="mb-6">
         <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">Technology Radar</p>
-        <h3 class="font-display text-2xl font-bold text-white">Our Technology Stack — Teknoloji Radarı</h3>
+        <h3 class="font-display text-2xl font-bold text-white">Teknoloji Radarı — Kullandığımız Stack ve Müşteriye Faydası</h3>
     </div>
 
     <div class="grid gap-6 md:grid-cols-3">
@@ -97,8 +136,8 @@
 
 <section id="engine" class="mx-auto w-[92%] max-w-7xl py-32">
     <div class="mb-16" data-reveal>
-        <h2 class="bg-gradient-to-b from-white to-slate-500 bg-clip-text font-display text-3xl font-bold tracking-tighter text-transparent sm:text-4xl">Process & Flow</h2>
-        <p class="mt-3 max-w-3xl text-slate-300">Bir yazılım fikrini, ölçeklenebilir bir sisteme dönüştüren akışımız.</p>
+        <h2 class="bg-gradient-to-b from-white to-slate-500 bg-clip-text font-display text-3xl font-bold tracking-tighter text-transparent sm:text-4xl">Çalışma Akışımız</h2>
+        <p class="mt-3 max-w-3xl text-slate-300">Bir yazılım fikrini, ölçeklenebilir bir sisteme dönüştüren net ve profesyonel akışımız.</p>
     </div>
 
     <!-- Process Flow with Animated Line -->
@@ -116,8 +155,8 @@
                         </div>
                         <div class="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/50 transition-all duration-500 animate-pulse"></div>
                     </div>
-                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Discovery</h3>
-                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">İhtiyacı anlıyoruz.</p>
+                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Keşif</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">İhtiyacı anlıyor, hedefi ve kapsamı netleştiriyoruz.</p>
                 </div>
                 <div class="absolute -bottom-8 left-6 hidden md:block text-slate-600 group-hover:text-blue-500/60 transition-colors duration-300">→</div>
             </div>
@@ -131,8 +170,8 @@
                         </div>
                         <div class="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/50 transition-all duration-500 animate-pulse"></div>
                     </div>
-                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Architecture</h3>
-                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Ölçeklenebilir yapıyı kuruyoruz.</p>
+                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Mimari Tasarım</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Ölçeklenebilir yapıyı ve teknoloji kararlarını kuruyoruz.</p>
                 </div>
                 <div class="absolute -bottom-8 left-6 hidden md:block text-slate-600 group-hover:text-blue-500/60 transition-colors duration-300">→</div>
             </div>
@@ -146,8 +185,8 @@
                         </div>
                         <div class="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/50 transition-all duration-500 animate-pulse"></div>
                     </div>
-                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Development</h3>
-                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Modern teknolojilerle kodluyoruz.</p>
+                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Geliştirme</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Modern teknolojilerle yüksek performanslı çözümler üretiyoruz.</p>
                 </div>
                 <div class="absolute -bottom-8 left-6 hidden md:block text-slate-600 group-hover:text-blue-500/60 transition-colors duration-300">→</div>
             </div>
@@ -161,8 +200,8 @@
                         </div>
                         <div class="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/50 transition-all duration-500 animate-pulse"></div>
                     </div>
-                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Infinite Scaling</h3>
-                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Sisteminizi büyütüyoruz.</p>
+                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Sürekli Ölçek</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Sisteminizi büyütür, izler ve sürdürülebilir hale getiririz.</p>
                 </div>
             </div>
         </div>
@@ -172,7 +211,7 @@
 <!-- The Moonpik Method -->
 <section class="mx-auto w-[92%] max-w-7xl py-16" data-reveal>
     <div class="mb-8">
-        <h2 class="font-display text-3xl font-bold text-white">The Moonpik Method — Nasıl Çalışırız?</h2>
+        <h2 class="font-display text-3xl font-bold text-white">Moonpik Metodu — Nasıl Çalışırız?</h2>
         <p class="mt-3 text-slate-300">Müşterinin süreç endişesini gideren, net ve profesyonel bir akış.</p>
     </div>
 
@@ -186,7 +225,7 @@
         <div class="rounded-2xl border border-white/8 bg-white/3 p-6">
             <div class="text-sm text-slate-400">02</div>
             <h4 class="mt-3 font-semibold text-white">Mühendislik & Geliştirme</h4>
-            <p class="mt-2 text-sm text-slate-300">Tasarımın üretime dönüşü: `Modern Yazılım Mimarisi` ve `Yüksek Performanslı Kod` ile modüler, testli çözümler inşa ediyoruz.</p>
+            <p class="mt-2 text-sm text-slate-300">Tasarımın üretime dönüşü: Modern Yazılım Mimarisi ve Yüksek Performanslı Kod ile modüler, testli çözümler inşa ediyoruz.</p>
         </div>
 
         <div class="rounded-2xl border border-white/8 bg-white/3 p-6">
@@ -203,8 +242,13 @@
         <h2 class="text-9xl md:text-[200px] font-bold text-white opacity-10 whitespace-nowrap">MOONPIK</h2>
     </div>
 
-    <!-- Trust Badges -->
+    <!-- Güvence Panelleri -->
     <div class="relative z-10 mx-auto w-[92%] max-w-7xl">
+        <div class="mb-12 max-w-4xl" data-reveal>
+            <p class="mb-4 text-xs uppercase tracking-[0.2em] text-slate-400">Mühendislik Güvencesi</p>
+            <h2 class="font-display text-3xl font-bold tracking-tighter text-white sm:text-4xl">İşinizi emanet ederken aradığınız güven, hız ve ölçeklenebilirlik burada birleşir.</h2>
+            <p class="mt-4 text-slate-300">Her katmanda kurumsal düşünür, sistemi yalnızca bugün için değil, büyüdüğünüz günler için de tasarlarız.</p>
+        </div>
         <div class="grid gap-8 md:grid-cols-3">
             <!-- Zero Downtime -->
             <div class="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md opacity-0 translate-y-6 transition duration-700 group hover:border-blue-400/50 hover:bg-blue-400/5" data-reveal>
@@ -212,8 +256,8 @@
                     <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg border border-blue-400/30 bg-blue-400/10">
                         <i data-lucide="shield-check" class="h-6 w-6 text-blue-300"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Zero-Downtime</h3>
-                    <p class="text-sm leading-6 text-gray-400">Kesintisiz erişilebilirlik.</p>
+                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Sıfır Kesinti</h3>
+                    <p class="text-sm leading-6 text-gray-400">Kesintisiz erişilebilirlik ve operasyonel süreklilik.</p>
                 </div>
             </div>
 
@@ -223,8 +267,8 @@
                     <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg border border-purple-400/30 bg-purple-400/10">
                         <i data-lucide="building-2" class="h-6 w-6 text-purple-300"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Enterprise Grade</h3>
-                    <p class="text-sm leading-6 text-gray-400">Kurumsal seviyede güvenlik.</p>
+                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Kurumsal Standart</h3>
+                    <p class="text-sm leading-6 text-gray-400">Kurumsal seviyede güvenlik, yetkilendirme ve denetlenebilirlik.</p>
                 </div>
             </div>
 
@@ -234,19 +278,11 @@
                     <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg border border-emerald-400/30 bg-emerald-400/10">
                         <i data-lucide="zap" class="h-6 w-6 text-emerald-300"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Future Proof</h3>
-                    <p class="text-sm leading-6 text-gray-400">Geleceğin teknolojilerine hazır mimari.</p>
+                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Geleceğe Hazır</h3>
+                    <p class="text-sm leading-6 text-gray-400">Geleceğin teknolojilerine hazır, esnek ve uzun ömürlü mimari.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Why Moonpik? -->
-<section id="why" class="mx-auto w-[92%] max-w-7xl py-16" data-reveal>
-    <div class="mb-6">
-        <h2 class="font-display text-3xl font-bold text-white">Why Moonpik?</h2>
-        <p class="mt-4 max-w-3xl text-slate-300">Moonpik, hız, güvenlik ve ölçeklenebilirlik konularında kurumsal düzeyde kanıtlanmış bir partnerdir. CEO perspektifiyle konuşursak: kararlarınızın etkisini hızla görmek istersiniz—biz bunu, otomatikleştirilmiş dağıtımlar, SLO odaklı operasyon ve <strong>Yüksek Performanslı Kod</strong>la sağlar, böylece time-to-market kısalır. Platformlarımız <strong>Modern Yazılım Mimarisi</strong> ilkelerine dayanır ve kurumunuzun büyüme hedeflerine paralel olarak <strong>SaaS Ekosistemi</strong> içinde sorunsuz şekilde genişler. Riskleri azaltır, hız kazandırır ve yatırımınızın ölçeklenebilir değerini garanti ederiz.</p>
     </div>
 </section>
 </section>
@@ -292,14 +328,14 @@
 
     <!-- Content -->
     <div class="relative z-10 mx-auto w-[92%] max-w-7xl flex flex-col items-center justify-center text-center">
-        <p class="mb-4 text-xs uppercase tracking-[0.2em] text-blue-400 opacity-0 translate-y-6 transition duration-700" data-reveal>Access & Control</p>
+        <p class="mb-4 text-xs uppercase tracking-[0.2em] text-blue-400 opacity-0 translate-y-6 transition duration-700" data-reveal>Erişim ve Kontrol</p>
         
         <h2 class="max-w-3xl bg-gradient-to-b from-white to-slate-400 bg-clip-text font-display text-3xl font-bold tracking-tighter text-transparent sm:text-4xl opacity-0 translate-y-6 transition duration-700" data-reveal>
-            Moonpik Cloud'a Bağlanın
+            Moonpik Bulut Ekosistemine Bağlanın
         </h2>
         
         <p class="mt-6 max-w-2xl text-base leading-8 text-slate-300 opacity-0 translate-y-6 transition duration-700" data-reveal>
-            Moonpik Cloud üzerinden tüm servislerinize tek bir noktadan erişin.
+            Tüm servislerinize tek bir noktadan erişin; izleme, kontrol ve büyüme aynı merkezde toplansın.
         </p>
         
         <div class="mt-12 opacity-0 translate-y-6 transition duration-700" data-reveal>
@@ -316,13 +352,38 @@
                 onmouseover="this.style.boxShadow='0 0 25px rgba(168, 85, 247, 0.8), 0 0 50px rgba(59, 130, 246, 0.6), inset 0 0 25px rgba(168, 85, 247, 0.2)'"
                 onmouseout="this.style.boxShadow='0 0 15px rgba(168, 85, 247, 0.4), 0 0 30px rgba(59, 130, 246, 0.2), inset 0 0 15px rgba(168, 85, 247, 0.1)'">
                 <span class="relative z-10 inline-flex items-center gap-2">
-                    Launch Console
+                    Konsolu Aç
                     <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                     </svg>
                 </span>
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-blue-500/20 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Why Moonpik? -->
+<section id="why" class="mx-auto w-[92%] max-w-7xl py-16" data-reveal>
+    <div class="mb-6">
+        <h2 class="font-display text-3xl font-bold text-white">Neden Moonpik?</h2>
+        <p class="mt-4 max-w-3xl text-slate-300">Moonpik, hız, güvenlik ve ölçeklenebilirlik konularında kurumsal düzeyde kanıtlanmış bir partnerdir. CEO perspektifiyle konuşursak: kararlarınızın etkisini hızla görmek istersiniz. Biz bunu otomatikleştirilmiş dağıtımlar, SLO odaklı operasyon ve Yüksek Performanslı Kod ile sağlarız; böylece time-to-market kısalır. Platformlarımız Modern Yazılım Mimarisi ilkelerine dayanır ve kurumunuzun büyüme hedeflerine paralel olarak SaaS Ekosistemi içinde sorunsuz şekilde genişler. Riskleri azaltır, hız kazandırır ve yatırımınızın ölçeklenebilir değerini garanti ederiz.</p>
+    </div>
+</section>
+
+<section class="mx-auto w-[92%] max-w-7xl pb-24 pt-4">
+    <div class="rounded-3xl border border-white/10 bg-gradient-to-r from-white/8 via-white/5 to-white/8 p-8 backdrop-blur-md md:p-10" data-reveal>
+        <div class="grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-center">
+            <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Son Adım</p>
+                <h2 class="mt-3 font-display text-3xl font-bold tracking-tighter text-white sm:text-4xl">İşinizi ciddiye alan, sonucu ciddiyetle üreten bir ekip arıyorsanız doğru yerdesiniz.</h2>
+                <p class="mt-4 max-w-2xl text-slate-300">Sizi yalnızca proje teslimiyle değil; planlama, geliştirme, canlıya alma ve devam eden bakım süreçleriyle de destekliyoruz.</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-200">İletişime Geç</a>
+                <a href="#solutions" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Çözümleri İncele</a>
+            </div>
         </div>
     </div>
 </section>

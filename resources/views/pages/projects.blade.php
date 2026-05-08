@@ -28,4 +28,21 @@
         </article>
     </div>
 </section>
+
+<section class="section">
+    <div class="container grid-3">
+        <article class="card">
+            <h3>SaaS Platformları</h3>
+            <p>Çok kiracılı mimari, yetkilendirme, abonelik ve yönetim katmanları tek sistemde birleştirilir.</p>
+        </article>
+        <article class="card">
+            <h3>Kurumsal Panel ve Dashboard</h3>
+            <p>Yöneticilerin karar almasını hızlandıran temiz arayüzler ve ölçülebilir gösterge panelleri.</p>
+        </article>
+        <article class="card">
+            <h3>Entegrasyon ve API Projeleri</h3>
+            <p>Dış sistemlerle konuşan, hızlı büyümeyi destekleyen API-first yapılar.</p>
+        </article>
+    </div>
+</section>
 @endsection

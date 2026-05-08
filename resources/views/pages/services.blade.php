@@ -31,4 +31,24 @@
         </article>
     </div>
 </section>
+
+<section class="section">
+    <div class="container grid-3">
+        <article class="card">
+            <div class="card-top"><div class="icon-box">04</div><span class="tag">Cloud</span></div>
+            <h3>Bulut Otomasyonu</h3>
+            <p>Tekrarlayan operasyonları hızlandıran, hata payını azaltan ve ölçeklenebilirliği artıran iş akışları.</p>
+        </article>
+        <article class="card">
+            <div class="card-top"><div class="icon-box">05</div><span class="tag">Data</span></div>
+            <h3>Veri Mimarisi</h3>
+            <p>PostgreSQL ve Redis odaklı hızlı, tutarlı ve güvenilir veri akışları.</p>
+        </article>
+        <article class="card">
+            <div class="card-top"><div class="icon-box">06</div><span class="tag">AI</span></div>
+            <h3>AI Destekli Akışlar</h3>
+            <p>Operasyonları hızlandıran, karar süreçlerini destekleyen akıllı otomasyon çözümleri.</p>
+        </article>
+    </div>
+</section>
 @endsection

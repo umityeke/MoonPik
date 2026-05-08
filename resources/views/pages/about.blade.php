@@ -25,4 +25,21 @@
         </div>
     </div>
 </section>
+
+<section class="section">
+    <div class="container grid-3">
+        <article class="card">
+            <h3>Net Analiz</h3>
+            <p>İş süreçlerinizi teknik bir sorun gibi değil, büyüme fırsatı olarak ele alırız.</p>
+        </article>
+        <article class="card">
+            <h3>Sağlam Mimari</h3>
+            <p>Modern Yazılım Mimarisi, SaaS Ekosistemi ve Yüksek Performanslı Kod prensipleriyle ilerleriz.</p>
+        </article>
+        <article class="card">
+            <h3>Sürdürülebilir Destek</h3>
+            <p>Canlıya aldıktan sonra da ölçüm, iyileştirme ve bakım tarafında yanınızda oluruz.</p>
+        </article>
+    </div>
+</section>
 @endsection

@@ -65,26 +65,26 @@
         <div class="hidden items-center gap-8 md:flex">
             <nav id="mainNav">
                 <ul class="flex items-center gap-6 text-sm text-slate-300">
-                    <li><a href="{{ route('home') }}#solutions" class="transition hover:text-white">Solutions</a></li>
-                    <li><a href="{{ route('home') }}#engine" class="transition hover:text-white">Engine</a></li>
-                    <li><a href="{{ route('home') }}#vision" class="transition hover:text-white">Vision</a></li>
-                    <li><a href="{{ route('home') }}#contact" class="transition hover:text-white">Contact</a></li>
+                    <li><a href="{{ route('home') }}#solutions" class="transition hover:text-white">Çözümler</a></li>
+                    <li><a href="{{ route('home') }}#engine" class="transition hover:text-white">Akış</a></li>
+                    <li><a href="{{ route('home') }}#vision" class="transition hover:text-white">Güvence</a></li>
+                    <li><a href="{{ route('home') }}#contact" class="transition hover:text-white">İletişim</a></li>
                 </ul>
             </nav>
 
             <a href="#" class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2.5 text-sm font-medium text-slate-100 backdrop-blur-md transition hover:bg-white/10">
-                Ecosystem Login
+                Ekosisteme Giriş
             </a>
         </div>
     </div>
 
     <div id="mobileNav" class="hidden border-t border-white/10 md:hidden">
         <div class="mx-auto grid w-[92%] max-w-7xl gap-3 py-4 text-sm text-slate-200">
-            <a href="{{ route('home') }}#solutions" class="block">Solutions</a>
-            <a href="{{ route('home') }}#engine" class="block">Engine</a>
-            <a href="{{ route('home') }}#vision" class="block">Vision</a>
-            <a href="{{ route('home') }}#contact" class="block">Contact</a>
-            <a href="#" class="mt-1 inline-flex w-fit items-center rounded-full border border-white/20 bg-white/5 px-4 py-2">Ecosystem Login</a>
+            <a href="{{ route('home') }}#solutions" class="block">Çözümler</a>
+            <a href="{{ route('home') }}#engine" class="block">Akış</a>
+            <a href="{{ route('home') }}#vision" class="block">Güvence</a>
+            <a href="{{ route('home') }}#contact" class="block">İletişim</a>
+            <a href="#" class="mt-1 inline-flex w-fit items-center rounded-full border border-white/20 bg-white/5 px-4 py-2">Ekosisteme Giriş</a>
         </div>
     </div>
 </header>
@@ -98,14 +98,14 @@
         <!-- Left: Logo & Message -->
         <div>
             <p class="font-sans text-sm tracking-[0.18em] text-slate-400 mb-2">MOONPIK</p>
-            <p class="text-xs text-slate-500">Designed with excellence</p>
+            <p class="text-xs text-slate-500">Mükemmeliyet odağıyla tasarlandı</p>
         </div>
 
         <!-- Right: Links -->
         <div class="flex gap-8 text-sm">
-            <a href="#" class="text-slate-400 transition hover:text-white">Documentation</a>
-            <a href="#" class="text-slate-400 transition hover:text-white">Contact</a>
-            <a href="#" class="text-slate-400 transition hover:text-white">Status</a>
+            <a href="#" class="text-slate-400 transition hover:text-white">Dokümantasyon</a>
+            <a href="#" class="text-slate-400 transition hover:text-white">İletişim</a>
+            <a href="#" class="text-slate-400 transition hover:text-white">Sistem Durumu</a>
         </div>
     </div>
 

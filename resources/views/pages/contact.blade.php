@@ -24,6 +24,12 @@
                 <p><strong>WhatsApp:</strong> <span data-config-text="whatsapp">+90 5XX XXX XX XX</span></p>
                 <p><strong>Adres:</strong> <span data-config-text="address">İstanbul, Türkiye</span></p>
             </div>
+
+            <div class="quote-box" style="margin-top:18px;">
+                <h3>Ne Konuşabiliriz?</h3>
+                <p>Kurumsal yazılım, SaaS mimarisi, bulut otomasyonu, mobil ürünler, güvenlik altyapısı ve dijital dönüşüm projeleri.</p>
+                <p>Ön değerlendirme sonrası size net kapsam, yol haritası ve ilk adım önerisiyle dönüş yaparız.</p>
+            </div>
         </div>
         <aside class="contact-panel">
             <h3>Form Alanı</h3>
@@ -49,6 +55,23 @@
                 <button type="submit" class="btn btn-primary btn-block">Talep Gönder</button>
             </form>
         </aside>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container grid-3">
+        <article class="card">
+            <h3>Hızlı Ön Görüşme</h3>
+            <p>İlk temas sonrası ihtiyacı anlayıp doğru ekip ve doğru çözüm yönünü belirleriz.</p>
+        </article>
+        <article class="card">
+            <h3>Net Teklif Yapısı</h3>
+            <p>Kapsam, teknik yaklaşım ve takvim baştan şeffaf biçimde paylaşılır.</p>
+        </article>
+        <article class="card">
+            <h3>Uzun Vadeli İşbirliği</h3>
+            <p>Proje tamamlandıktan sonra da bakım, geliştirme ve destek tarafında yanınızda kalırız.</p>
+        </article>
     </div>
 </section>
 @endsection
