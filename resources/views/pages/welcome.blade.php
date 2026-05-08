@@ -2,19 +2,6 @@
 
 @section('content')
 <div class="relative w-full overflow-hidden bg-[#030712]">
-    <!-- Fixed Header with Backdrop Blur -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/30 border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="text-white font-bold text-xl">MoonPik</div>
-            <nav class="hidden md:flex gap-8">
-                <a href="{{ route('home') }}" class="text-white/80 hover:text-white transition-colors">Home</a>
-                <a href="#" class="text-white/80 hover:text-white transition-colors">Services</a>
-                <a href="#" class="text-white/80 hover:text-white transition-colors">About</a>
-                <a href="#" class="text-white/80 hover:text-white transition-colors">Contact</a>
-            </nav>
-        </div>
-    </header>
-
     <!-- Parallax Gradient Lights -->
     <div id="gradient-1" class="fixed top-0 left-0 w-96 h-96 rounded-full blur-[120px] opacity-30 pointer-events-none" style="background: radial-gradient(circle, rgba(168, 85, 247, 0.8) 0%, transparent 70%); transform: translate(0px, 0px);"></div>
     
@@ -24,12 +11,12 @@
     
     <div id="gradient-4" class="fixed bottom-0 right-1/3 w-96 h-96 rounded-full blur-[120px] opacity-30 pointer-events-none" style="background: radial-gradient(circle, rgba(59, 130, 246, 0.8) 0%, transparent 70%); transform: translate(0px, 0px);"></div>
 
-    <!-- Hero Section -->
-    <div class="relative h-screen w-full flex items-center justify-center px-6 pt-16">
-        <div class="text-center max-w-4xl relative z-10">
+    <!-- Hero Section (Full Screen) -->
+    <div class="relative h-screen w-full flex items-center justify-center px-6 pt-20">
+        <div class="text-center max-w-5xl relative z-10">
             <!-- Main Title with Gradient -->
             <h1 class="text-7xl md:text-8xl lg:text-9xl font-bold mb-8 leading-tight" data-reveal>
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 animate-pulse">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400">
                     Engineering
                 </span>
                 <br />
