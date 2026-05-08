@@ -26,6 +26,8 @@ const revealObserver = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
 			entry.target.classList.add('is-visible');
+			entry.target.classList.remove('opacity-0', 'translate-y-6');
+			entry.target.classList.add('opacity-100', 'translate-y-0');
 
 			if (!entry.target.hasAttribute('data-reveal')) {
 				entry.target.style.opacity = '1';
@@ -45,6 +47,19 @@ revealEls.forEach((el, i) => {
 	}
 	revealObserver.observe(el);
 });
+
+const stepEls = document.querySelectorAll('[data-step]');
+const stepObserver = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.remove('opacity-55');
+			entry.target.classList.add('opacity-100', 'border-blue-400/55', 'shadow-[0_0_0_1px_rgba(96,165,250,.25),0_10px_30px_rgba(37,99,235,.2)]');
+			stepObserver.unobserve(entry.target);
+		}
+	});
+}, { threshold: 0.35 });
+
+stepEls.forEach((el) => stepObserver.observe(el));
 
 if (window.lucide && typeof window.lucide.createIcons === 'function') {
 	window.lucide.createIcons();
