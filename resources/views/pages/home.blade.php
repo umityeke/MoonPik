@@ -149,4 +149,80 @@
         </div>
     </div>
 </section>
+
+<!-- Ecosystem Access Section -->
+<section class="relative w-full overflow-hidden py-32 mt-8">
+    <!-- Network Background SVG -->
+    <svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" preserveAspectRatio="none" viewBox="0 0 1000 500">
+        <defs>
+            <linearGradient id="networkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:rgba(168,85,247,0.3);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgba(59,130,246,0.3);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        
+        <!-- Network nodes and connections -->
+        <line x1="150" y1="100" x2="350" y2="150" stroke="url(#networkGradient)" stroke-width="1" />
+        <line x1="350" y1="150" x2="500" y2="120" stroke="url(#networkGradient)" stroke-width="1" />
+        <line x1="500" y1="120" x2="700" y2="180" stroke="url(#networkGradient)" stroke-width="1" />
+        <line x1="700" y1="180" x2="850" y2="150" stroke="url(#networkGradient)" stroke-width="1" />
+        <line x1="150" y1="100" x2="500" y2="300" stroke="url(#networkGradient)" stroke-width="1" opacity="0.5" />
+        <line x1="350" y1="150" x2="700" y2="350" stroke="url(#networkGradient)" stroke-width="1" opacity="0.5" />
+        <line x1="500" y1="120" x2="850" y2="380" stroke="url(#networkGradient)" stroke-width="1" opacity="0.5" />
+        <line x1="700" y1="180" x2="300" y2="400" stroke="url(#networkGradient)" stroke-width="1" opacity="0.5" />
+        
+        <!-- Nodes -->
+        <circle cx="150" cy="100" r="4" fill="rgba(168,85,247,0.5)" />
+        <circle cx="350" cy="150" r="4" fill="rgba(59,130,246,0.5)" />
+        <circle cx="500" cy="120" r="5" fill="rgba(168,85,247,0.6)" />
+        <circle cx="700" cy="180" r="4" fill="rgba(59,130,246,0.5)" />
+        <circle cx="850" cy="150" r="4" fill="rgba(168,85,247,0.5)" />
+        <circle cx="300" cy="400" r="3" fill="rgba(59,130,246,0.4)" />
+        <circle cx="700" cy="350" r="3" fill="rgba(168,85,247,0.4)" />
+        <circle cx="500" cy="300" r="4" fill="rgba(59,130,246,0.4)" />
+        <circle cx="850" cy="380" r="3" fill="rgba(168,85,247,0.3)" />
+    </svg>
+
+    <!-- Background Radial Gradient Lights -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-0 left-0 w-96 h-96 rounded-full blur-[120px] opacity-10" style="background: radial-gradient(circle, rgba(168,85,247,0.6) 0%, transparent 70%);"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full blur-[120px] opacity-10" style="background: radial-gradient(circle, rgba(59,130,246,0.6) 0%, transparent 70%);"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 mx-auto w-[92%] max-w-7xl flex flex-col items-center justify-center text-center">
+        <p class="mb-4 text-xs uppercase tracking-[0.2em] text-blue-400 opacity-0 translate-y-6 transition duration-700" data-reveal>Access & Control</p>
+        
+        <h2 class="max-w-3xl bg-gradient-to-b from-white to-slate-400 bg-clip-text font-display text-3xl font-bold tracking-tighter text-transparent sm:text-4xl opacity-0 translate-y-6 transition duration-700" data-reveal>
+            Moonpik Cloud'a Bağlanın
+        </h2>
+        
+        <p class="mt-6 max-w-2xl text-base leading-8 text-slate-300 opacity-0 translate-y-6 transition duration-700" data-reveal>
+            Moonpik Cloud üzerinden tüm servislerinize tek bir noktadan erişin.
+        </p>
+        
+        <div class="mt-12 opacity-0 translate-y-6 transition duration-700" data-reveal>
+            <button class="group relative px-10 py-4 text-base font-semibold text-white rounded-lg overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-1"
+                style="
+                    background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(59, 130, 246, 0.15));
+                    border: 2px solid;
+                    border-image: linear-gradient(135deg, #a855f7, #3b82f6) 1;
+                    box-shadow: 
+                        0 0 15px rgba(168, 85, 247, 0.4),
+                        0 0 30px rgba(59, 130, 246, 0.2),
+                        inset 0 0 15px rgba(168, 85, 247, 0.1);
+                "
+                onmouseover="this.style.boxShadow='0 0 25px rgba(168, 85, 247, 0.8), 0 0 50px rgba(59, 130, 246, 0.6), inset 0 0 25px rgba(168, 85, 247, 0.2)'"
+                onmouseout="this.style.boxShadow='0 0 15px rgba(168, 85, 247, 0.4), 0 0 30px rgba(59, 130, 246, 0.2), inset 0 0 15px rgba(168, 85, 247, 0.1)'">
+                <span class="relative z-10 inline-flex items-center gap-2">
+                    Launch Console
+                    <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </span>
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-blue-500/20 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </button>
+        </div>
+    </div>
+</section>
 @endsection
