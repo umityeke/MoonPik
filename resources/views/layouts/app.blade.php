@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'MoonPik')</title>
     <meta name="description" content="@yield('description', 'MoonPik kurumsal teknoloji cozumleri')">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('logo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('logo.png') }}">
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +53,10 @@
 
 <header class="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-slate-950/40 backdrop-blur-lg">
     <div class="mx-auto flex w-[92%] max-w-7xl items-center justify-between gap-4 py-4">
-        <a href="{{ route('home') }}" class="font-sans text-lg font-medium tracking-[0.22em] text-slate-100 sm:text-xl">MOONPIK</a>
+        <a href="{{ route('home') }}" class="flex items-center gap-3">
+            <img src="{{ asset('logo.png') }}" alt="MoonPik" class="h-9 md:h-10" />
+            <span class="sr-only">MoonPik</span>
+        </a>
 
         <button class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-slate-100 md:hidden" id="menuToggle" aria-label="Menüyü Aç/Kapat">
             <i data-lucide="menu" class="h-5 w-5"></i>
