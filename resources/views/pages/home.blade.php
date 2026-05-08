@@ -138,16 +138,50 @@
     </div>
 </section>
 
-<section id="vision" class="mx-auto w-[92%] max-w-7xl py-32">
-    <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-md opacity-0 translate-y-6 transition duration-700" data-reveal>
-        <div class="flex flex-wrap items-center justify-center gap-4 text-center text-xs uppercase tracking-[0.16em] text-slate-300 sm:text-sm">
-            <span>Cloud-Native</span>
-            <span class="h-1.5 w-1.5 rounded-full bg-slate-500"></span>
-            <span>AI-Driven</span>
-            <span class="h-1.5 w-1.5 rounded-full bg-slate-500"></span>
-            <span>Security-Focused</span>
+<section id="vision" class="relative w-full py-32 overflow-hidden">
+    <!-- Large Background Text -->
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <h2 class="text-9xl md:text-[200px] font-bold text-white opacity-10 whitespace-nowrap">MOONPIK</h2>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="relative z-10 mx-auto w-[92%] max-w-7xl">
+        <div class="grid gap-8 md:grid-cols-3">
+            <!-- Zero Downtime -->
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md opacity-0 translate-y-6 transition duration-700 group hover:border-blue-400/50 hover:bg-blue-400/5" data-reveal>
+                <div class="flex flex-col">
+                    <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg border border-blue-400/30 bg-blue-400/10">
+                        <i data-lucide="shield-check" class="h-6 w-6 text-blue-300"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Zero-Downtime</h3>
+                    <p class="text-sm leading-6 text-gray-400">Kesintisiz erişilebilirlik.</p>
+                </div>
+            </div>
+
+            <!-- Enterprise Grade -->
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md opacity-0 translate-y-6 transition duration-700 group hover:border-purple-400/50 hover:bg-purple-400/5" data-reveal>
+                <div class="flex flex-col">
+                    <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg border border-purple-400/30 bg-purple-400/10">
+                        <i data-lucide="building-2" class="h-6 w-6 text-purple-300"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Enterprise Grade</h3>
+                    <p class="text-sm leading-6 text-gray-400">Kurumsal seviyede güvenlik.</p>
+                </div>
+            </div>
+
+            <!-- Future Proof -->
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md opacity-0 translate-y-6 transition duration-700 group hover:border-emerald-400/50 hover:bg-emerald-400/5" data-reveal>
+                <div class="flex flex-col">
+                    <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg border border-emerald-400/30 bg-emerald-400/10">
+                        <i data-lucide="zap" class="h-6 w-6 text-emerald-300"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold tracking-tighter text-white mb-2">Future Proof</h3>
+                    <p class="text-sm leading-6 text-gray-400">Geleceğin teknolojilerine hazır mimari.</p>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 </section>
 
 <!-- Ecosystem Access Section -->

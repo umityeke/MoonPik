@@ -88,19 +88,24 @@
 </main>
 
 <footer id="contact" class="relative z-10 mt-24 border-t border-white/10 bg-slate-950/30 backdrop-blur-md">
-    <div class="mx-auto flex w-[92%] max-w-7xl flex-col gap-6 py-12 sm:flex-row sm:items-end sm:justify-between" data-reveal>
+    <div class="mx-auto flex w-[92%] max-w-7xl flex-col gap-8 py-16 md:flex-row md:items-start md:justify-between" data-reveal>
+        <!-- Left: Logo & Message -->
         <div>
-            <p class="font-sans text-lg tracking-[0.18em] text-slate-100">MOONPIK</p>
-            <p class="mt-3 max-w-xl text-sm text-slate-400">Moonpik bir teknoloji geliştirme stüdyosudur. Fikirleri ölçeklenebilir yazılım ürünlerine dönüştürür.</p>
+            <p class="font-sans text-sm tracking-[0.18em] text-slate-400 mb-2">MOONPIK</p>
+            <p class="text-xs text-slate-500">Designed with excellence</p>
         </div>
-        <a href="mailto:info@moonpik.com" class="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2.5 text-sm text-slate-200 transition hover:bg-white/10">
-            <i data-lucide="send" class="h-4 w-4"></i>
-            info@moonpik.com
-        </a>
+
+        <!-- Right: Links -->
+        <div class="flex gap-8 text-sm">
+            <a href="#" class="text-slate-400 transition hover:text-white">Documentation</a>
+            <a href="#" class="text-slate-400 transition hover:text-white">Contact</a>
+            <a href="#" class="text-slate-400 transition hover:text-white">Status</a>
+        </div>
     </div>
-    <div class="mx-auto flex w-[92%] max-w-7xl items-center justify-between gap-4 border-t border-white/10 py-5 text-xs text-slate-500">
-        <p>© 2026 MoonPik</p>
-        <p>Software Architecture Studio</p>
+
+    <!-- Bottom: Copyright -->
+    <div class="mx-auto w-[92%] max-w-7xl border-t border-white/5 py-6">
+        <p class="text-[10px] text-slate-600">© 2026 Moonpik Technology Group</p>
     </div>
 </footer>
 
