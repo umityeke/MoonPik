@@ -1,1 +1,1 @@
-web: vendor/bin/php-server -D public -H 0.0.0.0 -p ${PORT:-8000}
+web: php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
