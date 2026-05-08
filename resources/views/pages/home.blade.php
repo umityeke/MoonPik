@@ -112,7 +112,7 @@
 <!-- Technology Radar -->
 <section class="mx-auto w-[92%] max-w-7xl py-12" data-reveal>
     <div class="mb-6">
-        <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">Technology Radar</p>
+        <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">Teknoloji Radarı</p>
         <h3 class="font-display text-2xl font-bold text-white">Teknoloji Radarı — Kullandığımız Stack ve Müşteriye Faydası</h3>
     </div>
 
