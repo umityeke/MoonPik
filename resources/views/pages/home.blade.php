@@ -134,6 +134,50 @@
     </div>
 </section>
 
+<section class="mx-auto w-[92%] max-w-7xl py-16" data-reveal>
+    <div class="mb-8">
+        <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">Projelerimiz</p>
+        <h3 class="font-display text-2xl font-bold text-white">Logolarla anlatılan iş örneklerimiz</h3>
+        <p class="mt-3 max-w-3xl text-slate-300">Bu alanda tamamladığımız projelerin markalarını göstereceğiz. Şimdilik yalnızca MoonPik logosu yer alıyor; sonraki logoları <span class="font-semibold text-white">public/assets/brand-logos/projelerimiz/</span> klasörüne ekleyebilirsiniz.</p>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex min-h-[220px] flex-col items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+            <div class="flex h-28 w-28 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/60 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
+                <img src="{{ asset('logo.png') }}" alt="MoonPik" class="h-full w-full object-contain" />
+            </div>
+            <p class="mt-4 text-sm font-medium text-white">MoonPik</p>
+            <p class="mt-1 text-xs text-slate-500">Proje markası / yer tutucu</p>
+        </div>
+
+        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+    </div>
+</section>
+
+<section class="mx-auto w-[92%] max-w-7xl py-10" data-reveal>
+    <div class="mb-8">
+        <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">İşbirliklerimiz</p>
+        <h3 class="font-display text-2xl font-bold text-white">Birlikte büyüdüğümüz marka ve ortaklıklar</h3>
+        <p class="mt-3 max-w-3xl text-slate-300">İş ortaklarımızın logolarını da bu alanda sergileyeceğiz. Şimdilik MoonPik logosu kullanıldı; yeni logoları <span class="font-semibold text-white">public/assets/brand-logos/isbirliklerimiz/</span> klasörüne ekleyebilirsiniz.</p>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex min-h-[220px] flex-col items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+            <div class="flex h-28 w-28 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/60 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
+                <img src="{{ asset('logo.png') }}" alt="MoonPik" class="h-full w-full object-contain" />
+            </div>
+            <p class="mt-4 text-sm font-medium text-white">MoonPik</p>
+            <p class="mt-1 text-xs text-slate-500">Geçici işbirliği logosu</p>
+        </div>
+
+        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+    </div>
+</section>
+
 <section id="engine" class="mx-auto w-[92%] max-w-7xl py-32">
     <div class="mb-16" data-reveal>
         <h2 class="bg-gradient-to-b from-white to-slate-500 bg-clip-text font-display text-3xl font-bold tracking-tighter text-transparent sm:text-4xl">Çalışma Akışımız</h2>
