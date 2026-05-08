@@ -108,3 +108,52 @@ if (form) {
 		}
 	});
 }
+
+// Process Flow Animation with Scroll-based Line
+const flowLine = document.getElementById('flowLine');
+const processSteps = document.querySelectorAll('[data-process-step]');
+
+if (flowLine && processSteps.length > 0) {
+	const engineSection = document.getElementById('engine');
+	
+	const processObserver = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				const rect = engineSection.getBoundingClientRect();
+				const sectionStart = engineSection.offsetTop;
+				const sectionHeight = engineSection.offsetHeight;
+				const triggerPoint = sectionStart + sectionHeight * 0.3;
+				
+				window.addEventListener('scroll', () => {
+					const scrollPos = window.scrollY;
+					
+					if (scrollPos >= sectionStart && scrollPos <= sectionStart + sectionHeight) {
+						// Calculate progress through section
+						const progress = (scrollPos - sectionStart) / (sectionHeight * 0.6);
+						const clipPercent = Math.min(Math.max(progress * 100, 0), 100);
+						
+						// Animate flow line
+						flowLine.style.clipPath = `inset(0 ${100 - clipPercent}% 0 0)`;
+						flowLine.style.opacity = Math.min(clipPercent / 100, 0.8);
+						
+						// Animate individual steps
+						processSteps.forEach((step, index) => {
+							const stepProgress = Math.max(0, clipPercent - (index * 25));
+							const stepOpacity = Math.min(stepProgress / 25, 1);
+							step.style.opacity = Math.max(0.4, stepOpacity);
+							
+							if (stepOpacity > 0.8) {
+								step.classList.add('translate-y-0');
+								step.classList.remove('translate-y-4');
+							}
+						});
+					}
+				});
+			}
+		});
+	}, { threshold: 0.3 });
+	
+	if (engineSection) {
+		processObserver.observe(engineSection);
+	}
+}

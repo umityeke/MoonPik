@@ -65,34 +65,75 @@
 </section>
 
 <section id="engine" class="mx-auto w-[92%] max-w-7xl py-32">
-    <div class="mb-10" data-reveal>
-        <h2 class="bg-gradient-to-b from-white to-slate-500 bg-clip-text font-display text-3xl font-bold tracking-tighter text-transparent sm:text-4xl">Process Engine</h2>
+    <div class="mb-16" data-reveal>
+        <h2 class="bg-gradient-to-b from-white to-slate-500 bg-clip-text font-display text-3xl font-bold tracking-tighter text-transparent sm:text-4xl">Process & Flow</h2>
         <p class="mt-3 max-w-3xl text-slate-300">Bir yazılım fikrini, ölçeklenebilir bir sisteme dönüştüren akışımız.</p>
     </div>
 
-    <div class="relative overflow-x-auto rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-        <div class="pointer-events-none absolute left-6 right-6 top-12 hidden h-px bg-gradient-to-r from-blue-500/10 via-blue-300/40 to-blue-500/10 md:block"></div>
-        <div class="grid min-w-[920px] gap-5 md:grid-cols-4">
-            <article class="group rounded-xl border border-white/10 bg-white/5 p-5 opacity-55 transition duration-500" data-step>
-                <span class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-xs">01</span>
-                <h3 class="font-display text-lg font-bold tracking-tighter">Discovery</h3>
-                <p class="mt-2 text-sm text-slate-300">İhtiyaç analizi, teknik haritalama ve önceliklendirme.</p>
-            </article>
-            <article class="group rounded-xl border border-white/10 bg-white/5 p-5 opacity-55 transition duration-500" data-step>
-                <span class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-xs">02</span>
-                <h3 class="font-display text-lg font-bold tracking-tighter">Architecture</h3>
-                <p class="mt-2 text-sm text-slate-300">Domain temelli mimari, güvenlik modeli ve veri tasarımı.</p>
-            </article>
-            <article class="group rounded-xl border border-white/10 bg-white/5 p-5 opacity-55 transition duration-500" data-step>
-                <span class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-xs">03</span>
-                <h3 class="font-display text-lg font-bold tracking-tighter">Delivery</h3>
-                <p class="mt-2 text-sm text-slate-300">Sürekli entegrasyon, kalite güvence ve canlıya alma süreci.</p>
-            </article>
-            <article class="group rounded-xl border border-white/10 bg-white/5 p-5 opacity-55 transition duration-500" data-step>
-                <span class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-xs">04</span>
-                <h3 class="font-display text-lg font-bold tracking-tighter">Scale</h3>
-                <p class="mt-2 text-sm text-slate-300">Gözlemlenebilirlik, optimizasyon ve sürdürülebilir büyüme.</p>
-            </article>
+    <!-- Process Flow with Animated Line -->
+    <div class="relative">
+        <!-- Animated Flow Line -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-0 pointer-events-none" id="flowLine" style="clip-path: inset(0 100% 0 0);"></div>
+
+        <div class="grid gap-8 md:grid-cols-4">
+            <!-- Step 1 -->
+            <div class="group relative" data-process-step="0">
+                <div class="flex flex-col items-start">
+                    <div class="relative mb-6">
+                        <div class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs font-bold group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all duration-500">
+                            <span class="opacity-60 group-hover:opacity-100">01</span>
+                        </div>
+                        <div class="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/50 transition-all duration-500 animate-pulse"></div>
+                    </div>
+                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Discovery</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">İhtiyacı anlıyoruz.</p>
+                </div>
+                <div class="absolute -bottom-8 left-6 hidden md:block text-slate-600 group-hover:text-blue-500/60 transition-colors duration-300">→</div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="group relative" data-process-step="1">
+                <div class="flex flex-col items-start">
+                    <div class="relative mb-6">
+                        <div class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs font-bold group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all duration-500">
+                            <span class="opacity-60 group-hover:opacity-100">02</span>
+                        </div>
+                        <div class="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/50 transition-all duration-500 animate-pulse"></div>
+                    </div>
+                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Architecture</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Ölçeklenebilir yapıyı kuruyoruz.</p>
+                </div>
+                <div class="absolute -bottom-8 left-6 hidden md:block text-slate-600 group-hover:text-blue-500/60 transition-colors duration-300">→</div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="group relative" data-process-step="2">
+                <div class="flex flex-col items-start">
+                    <div class="relative mb-6">
+                        <div class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs font-bold group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all duration-500">
+                            <span class="opacity-60 group-hover:opacity-100">03</span>
+                        </div>
+                        <div class="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/50 transition-all duration-500 animate-pulse"></div>
+                    </div>
+                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Development</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Modern teknolojilerle kodluyoruz.</p>
+                </div>
+                <div class="absolute -bottom-8 left-6 hidden md:block text-slate-600 group-hover:text-blue-500/60 transition-colors duration-300">→</div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="group relative" data-process-step="3">
+                <div class="flex flex-col items-start">
+                    <div class="relative mb-6">
+                        <div class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs font-bold group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all duration-500">
+                            <span class="opacity-60 group-hover:opacity-100">04</span>
+                        </div>
+                        <div class="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/50 transition-all duration-500 animate-pulse"></div>
+                    </div>
+                    <h3 class="font-display text-lg font-bold tracking-tighter text-white group-hover:text-blue-300 transition-colors duration-300">Infinite Scaling</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400 group-hover:text-slate-200 transition-colors duration-300">Sisteminizi büyütüyoruz.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
