@@ -31,6 +31,12 @@
         <p class="mt-7 max-w-3xl text-base leading-8 text-slate-300">Kurumsal ama fütüristik bir yerleşim diliyle, ürünleri hızlı teslim ederken teknik borcu azaltan bir mühendislik pratiği uyguluyoruz.</p>
     </div>
 
+    <!-- Architecture of Success -->
+    <div class="mb-12 rounded-2xl border border-white/6 bg-white/3 p-8 backdrop-blur-md" data-reveal>
+        <h3 class="font-display text-2xl font-semibold text-white">The Architecture of Success — Mühendislik Vizyonu</h3>
+        <p class="mt-4 text-sm text-slate-300">Ölçeklenebilir Dijital Ekosistemler — Müşteriye sadece kod teslim etmiyoruz; dayanıklı, büyüyen bir altyapı kuruyoruz. Microservices yaklaşımımız sistemi küçük, bağımsız ve hızlı değiştirilebilen modüllere ayırır; her parça bağımsız ölçeklenir ve arıza etki alanını minimal tutar. Cloud‑Native uygulamalarımız Railway ve Google Cloud üzerinde tasarlanarak %99.9 çalışma süresi hedefiyle üretime alınır. API‑First felsefemizle hem iç hem dış entegrasyonlar kesintisiz ve güvenli şekilde konuşur. <strong>Modern Yazılım Mimarisi</strong> ile tasarlanan çözümlerimiz performans, güvenlik ve sürdürülebilirliği aynı anda karşılar.</p>
+    </div>
+
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <article class="rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-md md:min-h-[360px] opacity-0 translate-y-6 transition duration-700" data-reveal>
             <div class="flex h-full flex-col justify-between">
@@ -61,6 +67,31 @@
                 </div>
             </div>
         </article>
+    </div>
+</section>
+
+<!-- Technology Radar -->
+<section class="mx-auto w-[92%] max-w-7xl py-12" data-reveal>
+    <div class="mb-6">
+        <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">Technology Radar</p>
+        <h3 class="font-display text-2xl font-bold text-white">Our Technology Stack — Teknoloji Radarı</h3>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-xl border border-white/8 bg-white/3 p-6">
+            <h4 class="font-semibold text-white">Laravel & Node.js</h4>
+            <p class="mt-2 text-sm text-slate-300">Yüksek güvenlikli ve ultra hızlı arka uç sistemleri. Laravel ile güvenli, test odaklı API'ler; Node.js ile düşük gecikmeli gerçek zamanlı servisler—üretimde gözle görülür hız artışı sağlar.</p>
+        </div>
+
+        <div class="rounded-xl border border-white/8 bg-white/3 p-6">
+            <h4 class="font-semibold text-white">React & Flutter</h4>
+            <p class="mt-2 text-sm text-slate-300">Web'den mobile kusursuz kullanıcı deneyimi. React ile etkileşimli web arayüzleri, Flutter ile native hissi veren mobil uygulamalar geliştiriyoruz; kullanıcı yolculuğunu her platformda tutarlı kılıyoruz.</p>
+        </div>
+
+        <div class="rounded-xl border border-white/8 bg-white/3 p-6">
+            <h4 class="font-semibold text-white">PostgreSQL & Redis</h4>
+            <p class="mt-2 text-sm text-slate-300">Verilerinizi milisaniyeler içinde işleyen veri mimarisi. PostgreSQL ile güçlü sorgulama ve tutarlılık; Redis ile önbellek ve hızlı oturum yönetimi—büyük trafik altında dahi hızlı yanıt süreleri sağlar.</p>
+        </div>
     </div>
 </section>
 
@@ -138,6 +169,34 @@
     </div>
 </section>
 
+<!-- The Moonpik Method -->
+<section class="mx-auto w-[92%] max-w-7xl py-16" data-reveal>
+    <div class="mb-8">
+        <h2 class="font-display text-3xl font-bold text-white">The Moonpik Method — Nasıl Çalışırız?</h2>
+        <p class="mt-3 text-slate-300">Müşterinin süreç endişesini gideren, net ve profesyonel bir akış.</p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/8 bg-white/3 p-6">
+            <div class="text-sm text-slate-400">01</div>
+            <h4 class="mt-3 font-semibold text-white">Stratejik Analiz</h4>
+            <p class="mt-2 text-sm text-slate-300">İşinizin dijital röntgenini çekiyoruz; hedefler, kullanıcılar ve riskler netleşir.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/8 bg-white/3 p-6">
+            <div class="text-sm text-slate-400">02</div>
+            <h4 class="mt-3 font-semibold text-white">Mühendislik & Geliştirme</h4>
+            <p class="mt-2 text-sm text-slate-300">Tasarımın üretime dönüşü: `Modern Yazılım Mimarisi` ve `Yüksek Performanslı Kod` ile modüler, testli çözümler inşa ediyoruz.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/8 bg-white/3 p-6">
+            <div class="text-sm text-slate-400">03</div>
+            <h4 class="mt-3 font-semibold text-white">Kesintisiz Destek</h4>
+            <p class="mt-2 text-sm text-slate-300">SLO'lar, izleme ve 7/24 destek ile sisteminiz büyürken yanınızdayız; operasyonel riskleri minimize ederiz.</p>
+        </div>
+    </div>
+</section>
+
 <section id="vision" class="relative w-full py-32 overflow-hidden">
     <!-- Large Background Text -->
     <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -180,6 +239,14 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Why Moonpik? -->
+<section id="why" class="mx-auto w-[92%] max-w-7xl py-16" data-reveal>
+    <div class="mb-6">
+        <h2 class="font-display text-3xl font-bold text-white">Why Moonpik?</h2>
+        <p class="mt-4 max-w-3xl text-slate-300">Moonpik, hız, güvenlik ve ölçeklenebilirlik konularında kurumsal düzeyde kanıtlanmış bir partnerdir. CEO perspektifiyle konuşursak: kararlarınızın etkisini hızla görmek istersiniz—biz bunu, otomatikleştirilmiş dağıtımlar, SLO odaklı operasyon ve <strong>Yüksek Performanslı Kod</strong>la sağlar, böylece time-to-market kısalır. Platformlarımız <strong>Modern Yazılım Mimarisi</strong> ilkelerine dayanır ve kurumunuzun büyüme hedeflerine paralel olarak <strong>SaaS Ekosistemi</strong> içinde sorunsuz şekilde genişler. Riskleri azaltır, hız kazandırır ve yatırımınızın ölçeklenebilir değerini garanti ederiz.</p>
     </div>
 </section>
 </section>
