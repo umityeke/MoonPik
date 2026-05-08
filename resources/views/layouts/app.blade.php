@@ -48,7 +48,7 @@
 </head>
 <body class="!bg-[#030712] !text-slate-100 antialiased">
 
-<header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/45 backdrop-blur-md">
+<header class="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-slate-950/40 backdrop-blur-lg">
     <div class="mx-auto flex w-[92%] max-w-7xl items-center justify-between gap-4 py-4">
         <a href="{{ route('home') }}" class="font-sans text-lg font-medium tracking-[0.22em] text-slate-100 sm:text-xl">MOONPIK</a>
 
@@ -83,7 +83,7 @@
     </div>
 </header>
 
-<main class="relative z-10">
+<main class="relative z-10 pt-24">
     @yield('content')
 </main>
 
