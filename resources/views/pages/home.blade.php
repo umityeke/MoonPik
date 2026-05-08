@@ -135,44 +135,46 @@
 </section>
 
 <section class="mx-auto w-[92%] max-w-7xl py-16" data-reveal>
-    <div class="mb-8">
-        <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">Projelerimiz</p>
-        <h3 class="font-display text-2xl font-bold text-white">Projelerimiz</h3>
+    <div class="mb-8 flex items-end justify-between gap-6">
+        <div>
+            <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">Projelerimiz</p>
+            <h3 class="font-display text-2xl font-bold text-white">Projelerimiz</h3>
+        </div>
+        <p class="hidden max-w-xl text-sm text-slate-400 md:block">Logo alanları, tamamlanan projelerin marka kimliklerini sergilemek için ayrıldı.</p>
     </div>
 
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="flex min-h-[220px] flex-col items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-            <div class="flex h-28 w-28 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/60 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
+        <div class="flex min-h-[180px] items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+            <div class="flex h-24 w-24 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/60 p-3 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
                 <img src="{{ asset('logo.png') }}" alt="MoonPik" class="h-full w-full object-contain" />
             </div>
-            <p class="mt-4 text-sm font-medium text-white">MoonPik</p>
-            <p class="mt-1 text-xs text-slate-500">Proje markası / yer tutucu</p>
         </div>
 
-        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
-        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
-        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[180px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[180px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[180px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
     </div>
 </section>
 
 <section class="mx-auto w-[92%] max-w-7xl py-10" data-reveal>
-    <div class="mb-8">
-        <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">İşbirliklerimiz</p>
-        <h3 class="font-display text-2xl font-bold text-white">İşbirliklerimiz</h3>
+    <div class="mb-8 flex items-end justify-between gap-6">
+        <div>
+            <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">İşbirliklerimiz</p>
+            <h3 class="font-display text-2xl font-bold text-white">İşbirliklerimiz</h3>
+        </div>
+        <p class="hidden max-w-xl text-sm text-slate-400 md:block">Bu bölüm, birlikte çalıştığımız marka ve çözüm ortaklarının logoları için ayrıldı.</p>
     </div>
 
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="flex min-h-[220px] flex-col items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-            <div class="flex h-28 w-28 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/60 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
+        <div class="flex min-h-[180px] items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+            <div class="flex h-24 w-24 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/60 p-3 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
                 <img src="{{ asset('logo.png') }}" alt="MoonPik" class="h-full w-full object-contain" />
             </div>
-            <p class="mt-4 text-sm font-medium text-white">MoonPik</p>
-            <p class="mt-1 text-xs text-slate-500">Geçici işbirliği logosu</p>
         </div>
 
-        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
-        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
-        <div class="min-h-[220px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[180px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[180px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
+        <div class="min-h-[180px] rounded-3xl border border-dashed border-white/10 bg-white/3 p-6 backdrop-blur-md"></div>
     </div>
 </section>
 
