@@ -46,9 +46,7 @@
     <meta name="twitter:title" content="@yield('title', 'MoonPik')">
     <meta name="twitter:description" content="@yield('description', 'MoonPik kurumsal teknoloji cozumleri')">
 </head>
-<body class="bg-moon-900 text-slate-100 antialiased">
-<div class="aurora-bg" aria-hidden="true"></div>
-<div class="mesh-overlay" aria-hidden="true"></div>
+<body class="!bg-[#030712] !text-slate-100 antialiased">
 
 <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/65 backdrop-blur-2xl">
     <div class="mx-auto flex w-[92%] max-w-7xl items-center justify-between gap-5 py-4">
@@ -78,7 +76,7 @@
                 <i data-lucide="sparkles" class="h-4 w-4"></i>
                 Referans Yapısı
             </a>
-            <a class="glow-btn inline-flex items-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-300/15 px-5 py-2.5 text-sm font-semibold text-cyan-100 transition hover:-translate-y-0.5" href="{{ route('contact') }}">
+            <a class="inline-flex items-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-300/15 px-5 py-2.5 text-sm font-semibold text-cyan-100 shadow-[0_0_0_1px_rgba(98,232,255,.35),0_8px_30px_rgba(98,232,255,.18)] transition hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(98,232,255,.75),0_12px_35px_rgba(98,232,255,.35)]" href="{{ route('contact') }}">
                 <i data-lucide="rocket" class="h-4 w-4"></i>
                 Kurumsal Görüşme
             </a>
@@ -100,7 +98,7 @@
     @yield('content')
 </main>
 
-<footer class="relative z-10 mt-24 border-t border-white/10 bg-slate-950/30">
+<footer class="relative z-10 mt-24 border-t border-white/10 bg-slate-950/30 backdrop-blur-md">
     <div class="mx-auto grid w-[92%] max-w-7xl gap-8 py-12 md:grid-cols-4" data-reveal>
         <div class="md:col-span-1">
             <div class="mb-4 inline-flex items-center gap-3">
