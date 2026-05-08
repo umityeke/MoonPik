@@ -137,8 +137,7 @@
 <section class="mx-auto w-[92%] max-w-7xl py-16" data-reveal>
     <div class="mb-8">
         <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">Projelerimiz</p>
-        <h3 class="font-display text-2xl font-bold text-white">Logolarla anlatılan iş örneklerimiz</h3>
-        <p class="mt-3 max-w-3xl text-slate-300">Bu alanda tamamladığımız projelerin markalarını göstereceğiz. Şimdilik yalnızca MoonPik logosu yer alıyor; sonraki logoları <span class="font-semibold text-white">public/assets/brand-logos/projelerimiz/</span> klasörüne ekleyebilirsiniz.</p>
+        <h3 class="font-display text-2xl font-bold text-white">Projelerimiz</h3>
     </div>
 
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -159,8 +158,7 @@
 <section class="mx-auto w-[92%] max-w-7xl py-10" data-reveal>
     <div class="mb-8">
         <p class="mb-3 text-xs uppercase tracking-[0.2em] text-slate-400">İşbirliklerimiz</p>
-        <h3 class="font-display text-2xl font-bold text-white">Birlikte büyüdüğümüz marka ve ortaklıklar</h3>
-        <p class="mt-3 max-w-3xl text-slate-300">İş ortaklarımızın logolarını da bu alanda sergileyeceğiz. Şimdilik MoonPik logosu kullanıldı; yeni logoları <span class="font-semibold text-white">public/assets/brand-logos/isbirliklerimiz/</span> klasörüne ekleyebilirsiniz.</p>
+        <h3 class="font-display text-2xl font-bold text-white">İşbirliklerimiz</h3>
     </div>
 
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
