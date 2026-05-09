@@ -9,6 +9,10 @@
     <div class="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.30),transparent_65%)] blur-[120px]"></div>
 
     <div class="mx-auto flex h-screen w-[92%] max-w-7xl flex-col items-center justify-center text-center">
+        <div class="mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-md opacity-0 translate-y-6 transition duration-700" data-reveal>
+            <img src="{{ asset('logo.png') }}" alt="MoonPik Logosu" class="h-8 w-8 rounded-full object-contain" />
+            <span class="text-xs font-medium uppercase tracking-[0.22em] text-slate-200">MoonPik</span>
+        </div>
         <h1 class="max-w-5xl bg-gradient-to-b from-white to-gray-500 bg-clip-text font-display text-5xl font-bold tracking-tighter leading-[1.08] text-transparent sm:text-6xl lg:text-7xl opacity-0 translate-y-6 transition duration-700" data-reveal>
             Moonpik ile fikirden ürüne,
             üründen ekosisteme.
