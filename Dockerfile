@@ -27,7 +27,7 @@ RUN mkdir -p database storage/framework/sessions storage/framework/views storage
 RUN touch database/database.sqlite
 RUN chmod -R 777 storage database bootstrap/cache
 
-# Nginx ayar dosyasını doğrudan oluşturuyoruz (Laravel standart ayarı ve port 8080)
+# Nginx ayar dosyasını doğrudan oluşturuyoruz (Geçici olarak 8080'i dinler, start.sh değiştirecek)
 RUN echo 'server {\n\
     listen 8080;\n\
     root /var/www/html/public;\n\
@@ -41,9 +41,11 @@ RUN echo 'server {\n\
     }\n\
 }' > /etc/nginx/sites-available/default
 
-# Portları bildiriyoruz
-ENV PORT=8080
-EXPOSE 8080
+# Başlatıcı scripti kopyalayıp çalıştırılabilir yapıyoruz
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
-# Önce DB migrate et, sonra arkaplanda PHP-FPM'i başlat ve önplanda Nginx'i çalıştır
-CMD php artisan migrate --force && php-fpm -D && nginx -g "daemon off;"
+# EXPOSE ve ENV PORT değerlerini KASITLI OLARAK sildik çünkü Railway bu değeri dışarıdan anlık olarak $PORT değişkeniyle veriyor.
+# Eğer biz buraya 8080 yazarsak, Railway o dinamik portu yok sayıp 8080'i dinliyor sanıyor ve sitenin dış bağlantısını tamamen kesiyor (TLS timeout).
+
+CMD ["/start.sh"]
