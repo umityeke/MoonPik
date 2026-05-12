@@ -1,46 +1,49 @@
-FROM php:8.4-apache
+FROM php:8.4-fpm
 
-# Gerekli sistem paketleri, SQLite ve Apache rewrite modülünü kuruyoruz
-# Apache MPM modüllerindeki çakışmayı önlemek için ayarları yapıyoruz
+# Nginx, SQLite ve gerekli eklentileri kuruyoruz
 RUN apt-get update && apt-get install -y \
+    nginx \
     libsqlite3-dev \
     unzip \
     git \
-    && docker-php-ext-install pdo_sqlite \
-    && a2enmod rewrite \
-    && a2dismod mpm_event mpm_worker || true \
-    && a2enmod mpm_prefork
+    && docker-php-ext-install pdo_sqlite pcntl \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Composer'ı kuruyoruz
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Çalışma dizinini /var/www/html (Apache varsayılanı) yapıyoruz
+# Çalışma dizinini ayarlıyoruz
 WORKDIR /var/www/html
 
-# Proje dosyalarını kopyalıyoruz
+# Kodları kopyalıyoruz
 COPY . .
 
-# Apache'nin varsayılan yayın klasörünü Laravel'in public klasörüne yönlendiriyoruz
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public
-RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
-RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
-
-# Bağımlılıkları kuruyoruz
+# Sadece production paketlerini kuruyoruz
 RUN composer install --no-dev --optimize-autoloader
 
-# Storage, cache ve SQLite veritabanı dosyalarını hazırlıyoruz
+# Klasörleri oluşturup, izinleri en geniş hale (777) getiriyoruz ki yazma sorunu olmasın
 RUN mkdir -p database storage/framework/sessions storage/framework/views storage/framework/cache/data bootstrap/cache
 RUN touch database/database.sqlite
+RUN chmod -R 777 storage database bootstrap/cache
 
-# Dosya izinlerini Apache'nin (www-data) yazabileceği şekilde ayarlıyoruz
-RUN chown -R www-data:www-data storage database bootstrap/cache
-RUN chmod -R 775 storage database bootstrap/cache
+# Nginx ayar dosyasını doğrudan oluşturuyoruz (Laravel standart ayarı ve port 8080)
+RUN echo 'server {\n\
+    listen 8080;\n\
+    root /var/www/html/public;\n\
+    index index.php index.html;\n\
+    location / {\n\
+        try_files $uri $uri/ /index.php?$query_string;\n\
+    }\n\
+    location ~ \\.php$ {\n\
+        include snippets/fastcgi-php.conf;\n\
+        fastcgi_pass 127.0.0.1:9000;\n\
+    }\n\
+}' > /etc/nginx/sites-available/default
 
-# Başlatıcı scripti kopyalayıp yetki veriyoruz
-COPY docker-entrypoint.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/docker-entrypoint.sh
-
-# Her ihtimale karşı 8080 portunu açıyoruz (Script içeriden portu dinamik alıp ayarlayacak)
+# Portları bildiriyoruz
+ENV PORT=8080
 EXPOSE 8080
 
-CMD ["docker-entrypoint.sh"]
+# Önce DB migrate et, sonra arkaplanda PHP-FPM'i başlat ve önplanda Nginx'i çalıştır
+CMD php artisan migrate --force && php-fpm -D && nginx -g "daemon off;"
