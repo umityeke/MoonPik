@@ -27,7 +27,8 @@ RUN mkdir -p database storage/framework/sessions storage/framework/views storage
 RUN touch database/database.sqlite
 RUN chmod -R 777 storage database bootstrap/cache
 
-# Nginx ayar dosyasını doğrudan oluşturuyoruz (Geçici olarak 8080'i dinler, start.sh değiştirecek)
+# Nginx ayar dosyasını doğrudan oluşturuyoruz (Sabit port 8080)
+# Railway EXPOSE komutunu gördüğü an trafiği doğrudan o porta gönderir
 RUN echo 'server {\n\
     listen 8080;\n\
     root /var/www/html/public;\n\
@@ -45,7 +46,7 @@ RUN echo 'server {\n\
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-# EXPOSE ve ENV PORT değerlerini KASITLI OLARAK sildik çünkü Railway bu değeri dışarıdan anlık olarak $PORT değişkeniyle veriyor.
-# Eğer biz buraya 8080 yazarsak, Railway o dinamik portu yok sayıp 8080'i dinliyor sanıyor ve sitenin dış bağlantısını tamamen kesiyor (TLS timeout).
+# Railway proxy'sine bağlanacağı portu açıkça bildiriyoruz
+EXPOSE 8080
 
 CMD ["/start.sh"]
