@@ -28,9 +28,10 @@ RUN touch database/database.sqlite
 RUN chmod -R 777 storage database bootstrap/cache
 
 # Nginx ayar dosyasını doğrudan oluşturuyoruz (Sabit port 8080)
-# Railway EXPOSE komutunu gördüğü an trafiği doğrudan o porta gönderir
+# DİKKAT: Railway iç ağında IPv6 (::) kullandığı için listen [::]:8080; eklenmesi şarttır!
 RUN echo 'server {\n\
     listen 8080;\n\
+    listen [::]:8080;\n\
     root /var/www/html/public;\n\
     index index.php index.html;\n\
     location / {\n\
