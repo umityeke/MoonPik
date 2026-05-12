@@ -10,8 +10,8 @@ sed -i "s/listen 8080;/listen ${LISTEN_PORT};/g" /etc/nginx/sites-available/defa
 # Veritabanı tablolarını oluştur
 php artisan migrate --force
 
-# PHP-FPM'i arka planda başlat
-php-fpm -D
+# PHP-FPM'i arkaplanda başlat (Docker imajında daemonize=no olduğu için & ile arka plana atıyoruz)
+php-fpm &
 
 # Nginx'i ön planda başlatarak uygulamanın Railway'e yanıt vermesini sağla
 exec nginx -g "daemon off;"
