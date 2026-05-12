@@ -27,5 +27,8 @@ RUN touch database/database.sqlite
 RUN chown -R www-data:www-data storage database bootstrap/cache
 RUN chmod -R 775 storage database bootstrap/cache
 
-# Railway PORT env değişkenini verir, biz de PHP'nin dahili sunucusunu o portta başlatırız
-CMD php artisan migrate --force && php -S 0.0.0.0:${PORT:-8080} -t public
+# Başlatma scriptini executable yapıyoruz
+RUN chmod +x entrypoint.sh
+
+# Uygulamayı başlat
+CMD ["./entrypoint.sh"]
