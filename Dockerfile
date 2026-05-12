@@ -1,12 +1,15 @@
 FROM php:8.4-apache
 
 # Gerekli sistem paketleri, SQLite ve Apache rewrite modülünü kuruyoruz
+# Apache MPM modüllerindeki çakışmayı önlemek için ayarları yapıyoruz
 RUN apt-get update && apt-get install -y \
     libsqlite3-dev \
     unzip \
     git \
     && docker-php-ext-install pdo_sqlite \
-    && a2enmod rewrite
+    && a2enmod rewrite \
+    && a2dismod mpm_event mpm_worker || true \
+    && a2enmod mpm_prefork
 
 # Composer'ı kuruyoruz
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
