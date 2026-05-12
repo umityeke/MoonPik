@@ -1,38 +1,43 @@
-FROM php:8.4-cli
+FROM php:8.4-apache
 
-# Gerekli sistem paketlerini ve SQLite için PDO eklentisini kuruyoruz
+# Gerekli sistem paketleri, SQLite ve Apache rewrite modülünü kuruyoruz
 RUN apt-get update && apt-get install -y \
     libsqlite3-dev \
     unzip \
     git \
-    && docker-php-ext-install pdo_sqlite pcntl
+    && docker-php-ext-install pdo_sqlite \
+    && a2enmod rewrite
 
-# Composer kuruyoruz
+# Composer'ı kuruyoruz
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Çalışma dizinini ayarlıyoruz
-WORKDIR /var/www
+# Çalışma dizinini /var/www/html (Apache varsayılanı) yapıyoruz
+WORKDIR /var/www/html
 
 # Proje dosyalarını kopyalıyoruz
 COPY . .
 
-# Sadece production (gerekli) PHP bağımlılıklarını kuruyoruz
+# Apache'nin varsayılan yayın klasörünü Laravel'in public klasörüne yönlendiriyoruz
+ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+
+# Bağımlılıkları kuruyoruz
 RUN composer install --no-dev --optimize-autoloader
 
-# SQLite veritabanı dosyasını ve log dizinlerini oluşturuyoruz
+# Storage, cache ve SQLite veritabanı dosyalarını hazırlıyoruz
 RUN mkdir -p database storage/framework/sessions storage/framework/views storage/framework/cache/data bootstrap/cache
 RUN touch database/database.sqlite
 
-# Dosya izinlerini ayarlıyoruz ki Laravel hata vermeden yazabilsin
+# Dosya izinlerini Apache'nin (www-data) yazabileceği şekilde ayarlıyoruz
 RUN chown -R www-data:www-data storage database bootstrap/cache
 RUN chmod -R 775 storage database bootstrap/cache
 
-# Railway'in trafiği yönlendirmesi için portu açıkça belirtiyoruz
-ENV PORT=8080
+# Başlatıcı scripti kopyalayıp yetki veriyoruz
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+# Her ihtimale karşı 8080 portunu açıyoruz (Script içeriden portu dinamik alıp ayarlayacak)
 EXPOSE 8080
 
-# Başlatma scriptini executable yapıyoruz
-RUN chmod +x entrypoint.sh
-
-# Uygulamayı başlat
-CMD ["./entrypoint.sh"]
+CMD ["docker-entrypoint.sh"]
