@@ -27,6 +27,10 @@ RUN touch database/database.sqlite
 RUN chown -R www-data:www-data storage database bootstrap/cache
 RUN chmod -R 775 storage database bootstrap/cache
 
+# Railway'in trafiği yönlendirmesi için portu açıkça belirtiyoruz
+ENV PORT=8080
+EXPOSE 8080
+
 # Başlatma scriptini executable yapıyoruz
 RUN chmod +x entrypoint.sh
 
