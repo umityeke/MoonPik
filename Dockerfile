@@ -1,8 +1,6 @@
 FROM serversideup/php:8.4-fpm-nginx
 
-# DİKKAT: Railway ayarlarında "Target port" 8000 olarak sabitlendiği için,
-# Nginx'i ve Docker'ı açıkça 8000 portunu dinlemeye zorluyoruz!
-ENV NGINX_WEB_PORT=8000
+# Trafiğin bağlanacağı portu Railway arayüzünüzdeki 8000 olarak ayarlıyoruz
 EXPOSE 8000
 
 # Gerekli kurulumlar
@@ -10,6 +8,10 @@ USER root
 RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+# ServerSideUp imajının Nginx ayarlarında gömülü olan 8080 portunu 8000 ile değiştiriyoruz.
+# Böylece Railway'in hedef portu (8000) ile Nginx'in dinlediği port birebir eşleşiyor!
+RUN find /etc/nginx -type f -exec sed -i 's/8080/8000/g' {} +
 
 # Dosyaları aktarıyoruz
 USER www-data
