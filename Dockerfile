@@ -27,7 +27,7 @@ RUN mkdir -p database storage/framework/sessions storage/framework/views storage
 RUN touch database/database.sqlite
 RUN chmod -R 777 storage database bootstrap/cache
 
-# Nginx ayar dosyasını doğrudan oluşturuyoruz (Sabit port 8080)
+# Nginx ayar dosyasını doğrudan oluşturuyoruz
 # DİKKAT: Railway iç ağında IPv6 (::) kullandığı için listen [::]:8080; eklenmesi şarttır!
 RUN echo 'server {\n\
     listen 8080;\n\
@@ -47,7 +47,7 @@ RUN echo 'server {\n\
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-# Railway proxy'sine bağlanacağı portu açıkça bildiriyoruz
-EXPOSE 8080
+# EXPOSE siliyoruz çünkü Railway Health Check mekanizması sadece anlık olarak enjekte ettiği $PORT değişkenini kontrol eder.
+# EXPOSE koyarsak Railway $PORT değişkenini ezdiğimizi sanıp Health Check'i 8080'de bırakabilir veya karıştırabilir.
 
 CMD ["/start.sh"]
