@@ -1,7 +1,9 @@
 FROM serversideup/php:8.4-fpm-nginx
 
-# Trafiğin bağlanacağı portu açıkça belirtiyoruz
-EXPOSE 8080
+# DİKKAT: Railway ayarlarında "Target port" 8000 olarak sabitlendiği için,
+# Nginx'i ve Docker'ı açıkça 8000 portunu dinlemeye zorluyoruz!
+ENV NGINX_WEB_PORT=8000
+EXPOSE 8000
 
 # Gerekli kurulumlar
 USER root
